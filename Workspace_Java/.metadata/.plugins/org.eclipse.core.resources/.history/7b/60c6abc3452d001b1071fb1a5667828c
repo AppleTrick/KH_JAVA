@@ -1,0 +1,14 @@
+package com.test01;
+
+public class Type04 {
+	public static void main(String[] args) {
+		// 문자형 char , 문자열 String ,  논리형 boolean
+		
+		char c1 = 'a';
+		System.out.println(c1);
+		char c2 = 'b';
+		int i1 = c2;
+		System.out.println(i1); // 아스키 code !!
+		
+	}
+}

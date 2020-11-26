@@ -1,0 +1,17 @@
+package com.test02;
+
+public class TypeToType01 {
+	public static void main(String[] args) {
+		
+		
+		// 1. int to char
+		int i = 65;
+		char c = (char)i;
+		System.out.println(c);
+		
+		// 2. char to int;
+		char c2 = 'B';
+		int i2 = (int)c2;
+		System.out.println(i2);
+	}
+}
