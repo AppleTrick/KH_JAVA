@@ -22,7 +22,7 @@ public class Score {
 	  *  그리고 기능은 switch 으로 만들자 if 사용 금지
 	  */
 	public String getGrade(double thisAvg) {
-		String result;
+		String result = null;
 		switch ((int)thisAvg/10) {
 		case 10:
 		case 9:
