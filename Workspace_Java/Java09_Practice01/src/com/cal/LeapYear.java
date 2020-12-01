@@ -15,7 +15,6 @@ public class LeapYear {
 		} else {
 			System.out.println("윤년이 아닙니다.");
 			return false;
-			
 		}
 	}
 	public static void main(String[] args) {

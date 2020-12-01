@@ -16,12 +16,17 @@ public class PointLength {
 		
 	}
 	public static double pLength(int x, int y) {
-		double Pointx =  Math.pow(x, 2);
-		double Pointy =  Math.pow(y, 2);
 		
-		double Meter =  Math.sqrt(Pointx + Pointy);
+		// Math.pow(a,b) : a^ b
+		// Math.sqrt(a) : root(a)
+		//Math. hypot(a,b)root(a^2 + b^2);
+//		double Pointx =  Math.pow(x, 2);
+//		double Pointy =  Math.pow(y, 2);
+//		double Meter =  Math.sqrt(Pointx + Pointy);
+		double result = Math.hypot(x, y);
 		
 		
-		return Meter;
+		
+		return result;
 	}
 }
