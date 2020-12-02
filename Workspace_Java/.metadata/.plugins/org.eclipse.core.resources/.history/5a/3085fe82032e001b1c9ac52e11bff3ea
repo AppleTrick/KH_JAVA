@@ -1,7 +1,0 @@
-package com.test01;
-
-public class MethodTest03 {
-	public static void main(String[] args) {
-		
-	}
-}
