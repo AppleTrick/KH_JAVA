@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=Java13_Class/src&lt;com.aaa{AAA.java[AAA" modifiers="1" timestamp="1607390687516"/>
+    <typeInfo handle="=Java13_Class/src&lt;com.test01{Super.java[Super" modifiers="1" timestamp="1607396612964"/>
+    <typeInfo handle="=Java13_Class/src&lt;com.test02{Animal.java[Animal" modifiers="1" timestamp="1607397552286"/>
+</typeInfoHistroy>

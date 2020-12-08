@@ -37,4 +37,14 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="com.aaa.AAA"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.bbb.BBB"/>
+    <fullyQualifiedTypeName name="com.test02.Dog"/>
+    <fullyQualifiedTypeName name="com.test02.Animal"/>
+    <fullyQualifiedTypeName name="com.test02.Cat"/>
+    <fullyQualifiedTypeName name="jdk.javadoc.internal.doclets.toolkit.resources.doclets"/>
+    <fullyQualifiedTypeName name="com.test03.MTest"/>
+    <fullyQualifiedTypeName name="com.test03.MySum"/>
+    <fullyQualifiedTypeName name="com.test03.Test02"/>
 </qualifiedTypeNameHistroy>
