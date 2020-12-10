@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=Java13_Class/src&lt;com.aaa{AAA.java[AAA" modifiers="1" timestamp="1607390687516"/>
-    <typeInfo handle="=Java13_Class/src&lt;com.test01{Super.java[Super" modifiers="1" timestamp="1607396612964"/>
-    <typeInfo handle="=Java13_Class/src&lt;com.test02{Animal.java[Animal" modifiers="1" timestamp="1607397552286"/>
+    <typeInfo handle="=Java13_Class/src&lt;com.aaa{AAA.java[AAA" modifiers="1" timestamp="1607414088080"/>
+    <typeInfo handle="=Java13_Class/src&lt;com.test01{Super.java[Super" modifiers="1" timestamp="1607396991475"/>
+    <typeInfo handle="=Java13_Class/src&lt;com.test02{Animal.java[Animal" modifiers="1" timestamp="1607397765326"/>
+    <typeInfo handle="=Java13_Class/src&lt;com.vehicle{Car.java[Car" modifiers="1" timestamp="1607481313791"/>
+    <typeInfo handle="=Java14_Abstract_Interface/src&lt;com.test01{Animal.java[Animal" modifiers="1025" timestamp="1607483730248"/>
+    <typeInfo handle="=Java14_Abstract_Interface/src&lt;com.test02{Animal.java[Animal" modifiers="1025" timestamp="1607484396364"/>
+    <typeInfo handle="=Java14_Abstract_Interface/src&lt;com.test03{Animal.java[Animal" modifiers="513" timestamp="1607488704208"/>
+    <typeInfo handle="=Java14_Abstract_Interface/src&lt;com.test04{Animal.java[Animal" modifiers="1025" timestamp="1607489316879"/>
+    <typeInfo handle="=Java14_Abstract_Interface/src&lt;com.test04{Bird.java[Bird" modifiers="513" timestamp="1607489407169"/>
+    <typeInfo handle="=Java14_Abstract_Interface/src&lt;com.test05{TV.java[TV" modifiers="513" timestamp="1607490199950"/>
 </typeInfoHistroy>
