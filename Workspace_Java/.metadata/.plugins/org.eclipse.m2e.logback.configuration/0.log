@@ -126,3 +126,5 @@ Caused by: java.io.FileNotFoundException: C:\Users\arran\OneDrive\πŸ≈¡ »≠∏È\MySc
 	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.identify(NexusIndexManager.java:1263)
 	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.identify(NexusIndexManager.java:301)
 	... 91 common frames omitted
+2020-12-15 09:04:11,081 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-12-16 09:06:19,795 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
