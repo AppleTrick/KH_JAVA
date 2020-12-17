@@ -8,6 +8,7 @@ public class ArrCube01 {
 	 * 3 6 9
 	 * 
 	 * 모양의 이차원 배열을 만들어서 출력하자.
+	 * 
 	 */
 	
 	public static void main(String[] args) {
