@@ -38,8 +38,8 @@ public class MTest03 {
 		Connection con = DriverManager.getConnection(url, user, password);
 		// 3. query 준비
 		String sql = " SELECT DEPTNO, DNAME, LOC "
-				+ " FROM DEPT "
-				+ " WHERE DEPTNO = " +deptno ;
+					+ " FROM DEPT "
+					+ " WHERE DEPTNO = " +deptno ;
 
 		Statement stmt = con.createStatement();
 
