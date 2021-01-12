@@ -20,8 +20,9 @@ public class MYTestBiz {
 //		return dao.selectOne();
 //	}
 	
-	public void insert() {
-		dao.insert();
+	public int insert(MYTestDto dto) {
+		
+		return dao.insert(dto);
 	}
 	public void update() {
 		dao.update();

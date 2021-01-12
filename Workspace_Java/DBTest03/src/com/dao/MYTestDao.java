@@ -124,32 +124,27 @@ public class MYTestDao {
 //
 //        return temp;
 	}
-
-	public void insert() {
-		MYTestDto temp = new MYTestDto();
-		System.out.println("번호를 입력해주세요");
-		temp.setMno(sc.nextInt());
-		System.out.println("이름을 입력해주세요");
-		temp.setMname(sc.next());
-		System.out.println("별명을 입력해주세요");
-		temp.setNickname(sc.next());
+	// 값 추가
+	public int insert(MYTestDto dto) {
 		
 		Connection con = getConnection();
 		String sql = " INSERT INTO MYTEST "
 					+" VALUES(?,?,?) ";
 		
 		PreparedStatement pstm = null;
+		int res = 0;
 		
 		try {
 			pstm = con.prepareStatement(sql);
-			pstm.setInt(1, temp.getMno());
-			pstm.setString(2, temp.getMname());
-			pstm.setString(3, temp.getNickname());
+			pstm.setInt(1, dto.getMno());
+			pstm.setString(2, dto.getMname());
+			pstm.setString(3, dto.getNickname());
 			
-			int res = pstm.executeUpdate();
+			res = pstm.executeUpdate();
 			
 			if (res > 0) {
 				System.out.println("입력완료");
+				commit(con);
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -163,6 +158,8 @@ public class MYTestDao {
 				e.printStackTrace();
 			}
 		}
+		
+		return res;
 	}
 
 	public void update() {

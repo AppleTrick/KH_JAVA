@@ -12,8 +12,13 @@ public class MYController {
 
 	public static int getMenu() {
 		StringBuffer sb = new StringBuffer();
-		sb.append("1. 전체 출력 \n").append("2. 선택 출력 \n").append("3. 삽     입 \n").append("4. 수     정 \n")
-				.append("5. 삭     제 \n").append("6. 종     료 \n").append("input select : ");
+		sb.append("1. 전체 출력 \n")
+		.append("2. 선택 출력 \n")
+		.append("3. 삽     입 \n")
+		.append("4. 수     정 \n")
+		.append("5. 삭     제 \n")
+		.append("6. 종     료 \n")
+		.append("input select : ");
 		System.out.println(sb);
 		int select = sc.nextInt();
 		return select;
@@ -37,18 +42,44 @@ public class MYController {
 				}
 				break;
 			case 2:
-				// 선택출력
-				List<MYTestDto> list1 = biz.selectOne();
-//				MYTestDto list1 = biz.selectOne();
-
-				for (MYTestDto dto : list1) {
-					System.out.printf("%d \t%10s \t %10s\n", dto.getMno(), dto.getMname(), dto.getNickname());
-				}
-//				System.out.printf("%d \t%10s \t %10s\n", list1.getMno(), list1.getMname(), list1.getNickname());
+//				// 선택출력
+//				List<MYTestDto> list1 = biz.selectOne();
+////				MYTestDto list1 = biz.selectOne();
+//
+//				for (MYTestDto dto : list1) {
+//					System.out.printf("%d \t%10s \t %10s\n", dto.getMno(), dto.getMname(), dto.getNickname());
+//				}
+////				System.out.printf("%d \t%10s \t %10s\n", list1.getMno(), list1.getMname(), list1.getNickname());
+				
+				System.out.println("선택할 번호");
+				int selectOneNo = sc.nextInt();
+//				MYTestDto selectOneDto = biz.selectOne(selectOneNo);
+				
 				break;
 			case 3:
-				// 삽입
-				biz.insert();
+//				// 삽입
+//				biz.insert();
+				
+				// 값 입력
+				System.out.println("추가할 번호 : ");
+				int insertNo = sc.nextInt();
+				System.out.println("추가할 이름 : ");
+				String insertName = sc.next();
+				System.out.println("추가할 별명 : ");
+				String insertNickname = sc.next();
+				
+				// 객체 생성
+				MYTestDto insertDto = new MYTestDto();
+				
+				// 객체 값 설정
+				insertDto.setMno(insertNo);
+				insertDto.setMname(insertName);
+				insertDto.setNickname(insertNickname);
+				
+				int insertRes = biz.insert(insertDto);
+				
+				
+				
 				break;
 			case 4:
 				// 수정
