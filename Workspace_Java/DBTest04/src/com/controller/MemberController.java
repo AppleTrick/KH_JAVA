@@ -79,12 +79,94 @@ public class MemberController {
 						);
 				break;
 			case 3:
+				System.out.println("내용을 추가합니다.");
+				System.out.println("1. 이름을 입력해주세요 : ");
+				String insertName =sc.next();
+				System.out.println("2. 나이를 입력해주세요");
+				int insertAge =sc.nextInt();
+				System.out.println("3. 성별을 입력해주세요 M or F");
+				String insertGender = sc.next();
+				System.out.println("4. 지역을 입력해주세요");
+				String insertLocation = sc.next();
+				System.out.println("5. 직업을 입력해주세요");
+				String insertJob = sc.next();
+				System.out.println("6. 전화번호를 입력해주세요");
+				String insertTel = sc.next();
+				System.out.println("7. 이메일을 입력해주세요");
+				String insertEmail = sc.next();
+				
+				MemberDto insertOne = new MemberDto();
+				insertOne.setM_name(insertName);
+				insertOne.setM_age(insertAge);
+				insertOne.setM_gender(insertGender);
+				insertOne.setM_location(insertLocation);
+				insertOne.setM_job(insertJob);
+				insertOne.setM_tel(insertTel);
+				insertOne.setM_email(insertEmail);
+				
+				int insertRes = biz.insert(insertOne);
+				
+				if (insertRes > 0) {
+					System.out.println("추가성공");
+				} else {
+					System.out.println("추가실패");
+				}
+				
 				break;
 			case 4:
+				System.out.println("내용을 수정합니다");
+				System.out.println("수정할 번호를 선택합니다.");
+				int updateNo = sc.nextInt();
+				System.out.println("1. 이름을 입력해주세요 : ");
+				String updateName =sc.next();
+				System.out.println("2. 나이를 입력해주세요");
+				int updateAge =sc.nextInt();
+				System.out.println("3. 성별을 입력해주세요 M or F");
+				String updateGender = sc.next();
+				System.out.println("4. 지역을 입력해주세요");
+				String updateLocation = sc.next();
+				System.out.println("5. 직업을 입력해주세요");
+				String updatetJob = sc.next();
+				System.out.println("6. 전화번호를 입력해주세요");
+				String updateTel = sc.next();
+				System.out.println("7. 이메일을 입력해주세요");
+				String updateEmail = sc.next();
+				
+				MemberDto updateDto = new MemberDto();
+				updateDto.setM_no(updateNo);
+				updateDto.setM_name(updateName);
+				updateDto.setM_age(updateAge);
+				updateDto.setM_gender(updateGender);
+				updateDto.setM_location(updateLocation);
+				updateDto.setM_job(updatetJob);
+				updateDto.setM_tel(updateTel);
+				updateDto.setM_email(updateEmail);
+				
+				int res = biz.update(updateDto);
+				
+				if (res > 0) {
+					System.out.println("업데이트 성공");
+				} else {
+					System.out.println("업데이트 실패");
+				}
+				
 				break;
 			case 5:
+				System.out.println("항목을 삭제합니다.");
+				System.out.println("삭제할 번호를 입력해주세요");
+				int deleteNo = sc.nextInt();
+				
+				int deleteRes = biz.delete(deleteNo);
+				
+				if(deleteRes > 0) {
+					System.out.println("삭제 성공");
+				}else {
+					System.out.println("삭제 실패");
+				}
+				
 				break;
 			case 6:
+				System.out.println("프로그램을 종료합니다");
 				break;
 				
 			}

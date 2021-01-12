@@ -2,6 +2,7 @@ package com.common;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -63,6 +64,15 @@ public class JDBCTemplate {
 		}
 	}
 	
+	public static void close(PreparedStatement pstm) {
+		try {
+			pstm.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	public static void commit(Connection con) {
 		try {
 			con.commit();
@@ -80,4 +90,5 @@ public class JDBCTemplate {
 			e.printStackTrace();
 		}
 	}
+	
 }

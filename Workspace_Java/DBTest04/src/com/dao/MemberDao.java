@@ -11,7 +11,7 @@ public interface MemberDao {
 							+ " FROM TB_MEMBER "
 							+ " WHERE M_NO = ? ";
 	String INSERT_SQL = " INSERT INTO TB_MEMBER "
-						+" VALUES(?,?,?,?,?,?,?,?) ";
+						+" VALUES(MEMBERSEQ.NEXTVAL,?,?,?,?,?,?,?) ";
 	String UPDATE_SQL = " UPDATE TB_MEMBER "
 						+" SET M_NAME = ? , M_AGE = ? , M_GENDER = ? , M_LOCATION = ? , M_JOB = ? , M_TEL = ? , M_EMAIL = ? "
 						+" WHERE M_NO = ? ";

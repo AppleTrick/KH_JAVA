@@ -22,17 +22,17 @@ public class MemberBizImpl implements MemberBiz {
 
 	@Override
 	public int insert(MemberDto dto) {
-		return 0;
+		return dao.insert(dto);
 	}
 
 	@Override
 	public int update(MemberDto dto) {
-		return 0;
+		return dao.update(dto);
 	}
 
 	@Override
 	public int delete(int m_no) {
-		return 0;
+		return dao.delete(m_no);
 	}
 
 }

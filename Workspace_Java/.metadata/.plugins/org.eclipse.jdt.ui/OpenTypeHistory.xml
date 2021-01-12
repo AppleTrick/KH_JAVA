@@ -13,4 +13,7 @@
     <typeInfo handle="=Java14_Abstract_Interface/src&lt;com.test07{Profile.java[Profile" modifiers="1" timestamp="1607562179416"/>
     <typeInfo handle="=Java14_Abstract_Interface/src&lt;com.test07{Display.java[Display" modifiers="513" timestamp="1607562176693"/>
     <typeInfo handle="=Java14_Abstract_Interface/src&lt;com.test07{Job.java[Job" modifiers="513" timestamp="1607562177835"/>
+    <typeInfo handle="=DBTest04/src&lt;com.dao{MemberDao.java[MemberDao" modifiers="513" timestamp="1610418982431"/>
+    <typeInfo handle="=DBTest04/src&lt;com.biz{MemberBiz.java[MemberBiz" modifiers="513" timestamp="1610421158301"/>
+    <typeInfo handle="=DBTest04/C:\/Program Files\/Amazon Corretto\/jdk11.0.9_12\/lib\/jrt-fs.jar`java.base=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/11\/docs\/api\/=/&lt;java.lang.reflect(Member.class[Member" modifiers="1537" timestamp="1604455794000"/>
 </typeInfoHistroy>
