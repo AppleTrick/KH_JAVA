@@ -67,16 +67,17 @@ public class MemberController {
 				int selectNo = sc.nextInt();
 				
 				MemberDto listOne = biz.selectOne(selectNo);
-				System.out.printf("%d %10s %10d %10s %10s %10s %10s %10s\n", 
-						listOne.getM_no(), 
-						listOne.getM_name(),
-						listOne.getM_age(),
-						listOne.getM_gender(),
-						listOne.getM_location(),
-						listOne.getM_job(),
-						listOne.getM_tel(),
-						listOne.getM_email()
-						);
+//				System.out.printf("%d %10s %10d %10s %10s %10s %10s %10s\n", 
+//						listOne.getM_no(), 
+//						listOne.getM_name(),
+//						listOne.getM_age(),
+//						listOne.getM_gender(),
+//						listOne.getM_location(),
+//						listOne.getM_job(),
+//						listOne.getM_tel(),
+//						listOne.getM_email()
+//						);
+				System.out.println(listOne);
 				break;
 			case 3:
 				System.out.println("내용을 추가합니다.");
