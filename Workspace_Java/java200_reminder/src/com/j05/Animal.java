@@ -28,5 +28,4 @@ public class Animal {
 	public void bark(String bark) {
 		System.out.println(" 울음 소리 : " + bark);
 	}
-	
 }
